@@ -7,9 +7,3 @@ router.get('/', (req, res) => {
 });
 
 module.exports = router;
-```[cite: 2]
-
-* **สมาชิกคนที่ 2**:
-```bash
-mkdir -p src/models
-touch src/models/sensor.js
