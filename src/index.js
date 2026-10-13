@@ -4,6 +4,7 @@ import { createClient } from "redis";
 import { prisma } from "./prisma.js";
 
 const app = express();
+const unusedVar = 10;
 const PORT = Number(process.env.PORT || 3000);
 
 app.use(express.json());
