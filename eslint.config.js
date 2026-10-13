@@ -1,21 +1,19 @@
-const js = require('@eslint/js');
+import js from '@eslint/js';
 
-module.exports = [
+export default [
   {
     files: ['**/*.js'],
     languageOptions: {
       ecmaVersion: 'latest',
-      sourceType: 'commonjs',
+      sourceType: 'module',
       globals: {
-        require: 'readonly',
-        module: 'readonly',
         process: 'readonly',
         console: 'readonly',
       },
     },
     rules: {
       ...js.configs.recommended.rules,
-      'no-unused-vars': 'warn',
+      'no-unused-vars': 'error',
       'no-console': 'off',
     },
   },
